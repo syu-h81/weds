@@ -1,0 +1,304 @@
+@media (max-width :600px) {
+
+  .header-containers {
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .menu-nav {
+    display: none;
+  }
+
+  .car-select-field {
+    padding-left: 4%;
+  }
+
+  .car-select-link {
+    margin-right: 4%;
+  }
+
+  .select-img {
+    height: 35px;
+  }
+
+  .logos-wrapper {
+    display: none;
+  }
+
+  .menu-bars {
+    display: block;
+    position: relative;
+    width: 85%;
+    height: 1.6rem;
+    text-align: right;
+  }
+
+  .menu-bars span {
+    float: right;
+    box-sizing: border-box;
+    position: absolute;
+    width: 2.8rem;
+    height: 2px;
+    background-color: #000;
+    transition: all .5s;
+  }
+
+  .menu-bar1 {
+    top: 0;
+  }
+
+  .menu-bar2 {
+    top: 10px;
+  }
+
+  .menu-bar3 {
+    top: 20px;
+  }
+
+  #menu-bar-toggle.show .menu-bar1 {
+    transform: translateY(10px) rotate(-45deg);
+  }
+
+  #menu-bar-toggle.show .menu-bar2 {
+    opacity: 0;
+  }
+
+  #menu-bar-toggle.show .menu-bar3 {
+    transform: translateY(-10px) rotate(45deg);
+  }
+
+  .modal-wrapper{
+    background-color: rgba(25, 105, 137, 0.9);
+    position: fixed;
+    top: 9%;
+    right: 0;
+    bottom: 4%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    display: inline-block;
+    display: none;
+    z-index: 99999;
+  }
+
+  .modal-containers {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .modal-menu-nav,
+  .modal-logos-field,
+  .modal-show-wheels {
+    width: 30%;
+    height: auto;
+  }
+
+  .modal-logos-field {
+    display: none;
+  }
+
+  li {
+    list-style: none;
+    font-size: 1em;
+     margin: 0;
+   }
+
+   .modal-menu-nav a {
+     display: block;
+     margin: 8% 0;
+     font-size: 1em;
+   }
+
+  .modal-logos li {
+    margin: 4% 0;
+    margin-right: 30%;
+    width: 80%;
+  }
+
+  .each-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .top-wrapper {
+    background-position: 100% -40px;
+  }
+
+  .show-kranze-wheels {
+  }
+
+  .modal-show-wheel-img {
+    width: 80%;
+    height: auto;
+    display: block;
+    padding-bottom: 10%;
+  }
+
+  .modal-show-wheel-img:last-child {
+    padding-bottom: 0;
+  }
+
+  .show-wheels {
+    display: none;
+  }
+
+  .wheels-containers {
+    display: block;
+  }
+
+  .top-wheels-img-field,
+  .wheel-field {
+    width: 100%;
+  }
+
+  .wheels {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 4%;
+  }
+
+  .wheel-sub-title {
+    font-size: 1.0em;
+  }
+
+  .kranze-wheels {
+    padding: 0;
+  }
+
+  .wheel-field-L {
+    transform:translateX(-40px);
+    opacity:0;
+    transition : all 1000ms;
+  }
+
+  .wheel-field-R {
+    transform:translateX(40px);
+    opacity:0;
+    transition : all 1000ms;
+  }
+
+  .wheel-sub-title-L {
+    transform:translateX(-40px);
+    opacity:0;
+    transition : all 1400ms;
+  }
+
+  .wheel-sub-title-R {
+    transform:translateX(40px);
+    opacity:0;
+    transition : all 1400ms;
+  }
+
+  .wheel-field-fadein {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .logo-wheels {
+    width: 20%;
+  }
+
+  .text-more-wheels {
+    font-size: 0.8em;
+  }
+
+  .news-containers {
+    display: block;
+  }
+
+  .news-info-field,
+  .news-contents-field {
+    width: 100%;
+  }
+
+  .news-info {
+    padding: 0 2%;
+    margin: 0;
+    font-size: 0.6em;
+  }
+
+  .maverick-wheel-containers {
+    display: block;
+  }
+
+  .maverick-wheels {
+    padding: 0;
+  }
+
+  .leonis-wheels {
+    padding: 0;
+  }
+
+  .fzero-containers {
+    display: block;
+  }
+
+  .fzero-wheel-field {
+    width: 100%;
+  }
+
+  .fzero-text-field {
+    margin: 0;
+  }
+
+  .text-fzero {
+    line-height: 140%;
+    letter-spacing: 1px;
+    padding: 5% 0;
+    font-size: 1.0em;
+    font-family: serif;
+    font-weight: bold;
+  }
+
+  .fzero-wheels {
+    width: 100%;
+    padding: 0;
+  }
+
+  .novaris-logo-wheels,
+  .adventure-logo-wheels {
+    width: 30%;
+  }
+
+  .novaris-p,
+  .wedsadventure-p {
+    font-size: 0.4em;
+  }
+
+  #novaris-wheels-toggle,
+  #adventure-wheels-toggle {
+    display: block;
+    position: relative;
+    width: 1.5rem;
+    height: 1.0rem;
+  }
+
+  .novaris-bar2,
+  .adventure-bar2 {
+    top: 8px;
+  }
+
+  .novaris-bar3,
+  .adventure-bar3 {
+    top: 16px;
+  }
+
+  #novaris-wheels-toggle.show .bar1,
+  #adventure-wheels-toggle.show .bar1 {
+    transform: translateY(8px) rotate(-45deg);
+  }
+
+  #novaris-wheels-toggle.show .bar3,
+  #adventure-wheels-toggle.show .bar3 {
+    transform: translateY(-8px) rotate(45deg);
+  }
+
+}
