@@ -1,0 +1,507 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.block {
+  z-index: 0;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1% 4%;
+}
+
+.header-containers {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu-nav-link {
+  display: inline-block;
+  color: #000;
+}
+
+li {
+  list-style: none;
+  font-size: 0.8em;
+  margin: 0 15px;
+}
+
+.car-select-field {
+  display: flex;
+}
+
+.car-select-link {
+  display: block;
+  margin-right: 10%;
+}
+
+.car-select-link:last-child {
+  margin-right: 0;
+}
+
+.select-img {
+  height: 40px;
+}
+
+.menu-bars {
+  display: none;
+}
+
+.modal-wrapper {
+  display: none;
+}
+
+.logos-wrapper {
+  background-color: #000;
+  padding: 1% 0;
+}
+
+.logos-containers {
+  max-width: 1200px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logos li {
+  margin: 0;
+  width: 85%;
+}
+
+.each-logo {
+  width: 100%;
+  height: auto;
+  margin: 0 15px;
+}
+
+.others-link {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.top-wrapper {
+  background: top;
+  background-image: url(../kranze_images/LEXUS_LS_back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% -120px;
+  z-index: 0;
+}
+
+.ls-img,
+.maverick-img {
+  width: 100%;
+  height: auto;
+  transition: all 0.1s ease 0s;
+}
+
+.kranze-wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.wheels-containers {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.top-kranze-alhard {
+  background-image: url(../kranze_images/KranzeMaricive_ALPHARD_back.jpg);
+}
+
+.top-wheels-img-field {
+  width: 50%;
+  height: auto;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.alhard-img,
+.benz-img,
+.yaris-img,
+.fzero-img,
+.novaris-img,
+.adventure-img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.scale-img {
+  transition-duration: 0.5s; /*変化の時間*/
+}
+
+.scale-img:hover {
+  transform: scale(1.2,1.2); /*画像の拡大*/
+  cursor: pointer; /*カーソルをポインターにする*/
+}
+
+.kranze-wheel-field {
+  background-image: url(../kranze_images/KranzeMaricive_ALPHARD_back.jpg);
+}
+
+.wheel-field {
+  width: 50%;
+  height: auto;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+}
+
+.wheels {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 10%;
+}
+
+.kranze-wheels {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-bottom: 0;
+}
+
+.wheel {
+  width: 20%;
+  height: auto;
+}
+
+.kranze-wheel-img,
+.wheel-img {
+  width: 100%;
+  height: auto;
+}
+
+.wheel p {
+  font-family: sans-serif;
+  font-size: 0.6em;
+  margin: 0px auto;
+}
+
+.wheel-sub-title {
+  font-family: serif;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  width: 100%;
+  margin: 6% 0;
+}
+
+.wheel-field-L {
+  transform:translateX(-100px);
+  opacity:0;
+  transition : all 1000ms;
+}
+
+.wheel-field-R {
+  transform:translateX(100px);
+  opacity:0;
+  transition : all 1000ms;
+}
+
+.wheel-sub-title-L {
+  transform:translateX(-300px);
+  opacity:0;
+  transition : all 2000ms;
+}
+
+.wheel-sub-title-R {
+  transform:translateX(300px);
+  opacity:0;
+  transition : all 2000ms;
+}
+
+.wheel-field-fadein {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.evo {
+  background-color: #000;
+  color: #fff;
+  font-family: sans--serif;
+  letter-spacing: 1px;
+  padding: 2px 10px;
+  margin: 0;
+}
+
+.more-wheels-field {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+  align-items: center;
+  z-index: 100;
+  background-color: #F0F0F0;
+  position: relative;
+}
+
+.text-more-wheels-field {
+  margin-right: 1%;
+}
+
+.more-wheels-menu {
+  display: block;
+  position: relative;
+  width: 3.0rem;
+  height: 1.6rem;
+}
+
+.more-wheels-menu span {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all .5s;
+}
+
+.bar1 {
+  top: 0;
+}
+
+.bar2 {
+  top: 15px;
+}
+
+.bar3 {
+  top: 30px;
+}
+
+#kranze-wheels-toggle.show .bar1,
+#maverick-wheels-toggle.show .bar1,
+#leonis-wheels-toggle.show .bar1,
+#novaris-wheels-toggle.show .bar1,
+#adventure-wheels-toggle.show .bar1 {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+#kranze-wheels-toggle.show .bar2,
+#maverick-wheels-toggle.show .bar2,
+#leonis-wheels-toggle.show .bar2,
+#novaris-wheels-toggle.show .bar2,
+#adventure-wheels-toggle.show .bar2 {
+  opacity: 0;
+}
+
+#kranze-wheels-toggle.show .bar3,
+#maverick-wheels-toggle.show .bar3,
+#leonis-wheels-toggle.show .bar3,
+#novaris-wheels-toggle.show .bar3,
+#adventure-wheels-toggle.show .bar3 {
+  transform: translateY(-18px) rotate(45deg);
+}
+
+.logo-wheels {
+  width: 10%;
+}
+
+.more-wheels-logo {
+  width: 100%;
+  height: auto;
+  padding-left: 6%
+}
+
+.news-wrapper {
+  z-index: 100;
+  position: relative;
+}
+
+.news-containers {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.news-info-field {
+  width: 50%;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+}
+
+.news-info {
+  width: 100%;
+  height: auto;
+  padding-left: 20%;
+  text-align: justify;
+}
+
+.news-info li {
+  padding: 2% 0;
+}
+
+.bar {
+  padding: 0 2%;
+}
+
+.news-contents-field {
+  width: 50%;
+  height: auto;
+  background-color: #fff;
+}
+
+.news-contents {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-content {
+  width: 50%;
+}
+
+.news-content-img {
+  vertical-align: top;
+  width: 100%;
+  height: auto;
+}
+
+.maverick-top-wrapper {
+  z-index: 0;
+  background-image: url(../maverick_images/maverick_back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.maverick-wheel-wrapper {
+  position: relative;
+  z-index: 100;
+}
+
+.maverick-wheel-containers {
+  display: flex;
+  width: 100%;
+}
+
+.maverick-wheel-field {
+  background-image: url(../maverick_images/maverick_BENZ_C_back.jpg);
+  background-size: contain;
+}
+
+.maverick-wheels {
+  padding-top: 5%;
+  padding-left: 30%;
+  padding-bottom: 0;
+}
+
+.leonis-wrapper {
+  z-index: 100;
+  position: relative;
+}
+
+.leonis-wheel-field {
+  background-image: url(../Leonis_images/leonis_yaris_back.jpg);
+  background-size: contain;
+}
+
+.leonis-wheels {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-bottom: 0;
+}
+
+.fzero-wrapper {
+  z-index: 100;
+  position: relative;
+  background-color: #fff;
+}
+
+.fzero-containers {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.fzero-wheel-field {
+  width: 50%;
+  height: auto;
+}
+
+.fzero-text-field {
+  display: inline-block;
+  text-align: left;
+  margin-left: 30%;
+}
+
+.text-fzero {
+  line-height: 200%;
+  letter-spacing: 1px;
+  padding: 5% 0;
+  font-size: 1.3em;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.fzero-wheels {
+  display: flex;
+  width: 80%;
+  padding-left: 20%;
+  justify-content: space-around;
+}
+
+.novaris-adventure-wrapper {
+  position: relative;
+}
+
+.novaris-adventure-containers {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.novaris-wrapper,
+.weds-adventure-wrapper {
+  width: 50%;
+  height: auto;
+}
+
+.novaris-logo-wheels,
+.adventure-logo-wheels {
+  width: 20%;
+}
+
+.novaris-logo,
+.adventure-logo {
+  width: 100%;
+  height: auto;
+}
